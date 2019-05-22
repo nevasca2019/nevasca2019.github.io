@@ -1,0 +1,91 @@
+
+body{
+	background-color: DeepSkyBlue;
+	background-image: url(../imagens/paisagem.jpg);
+	background-size: 100%;	
+	background-position: center;
+	background-attachment: fixed;
+
+	color: DeepPink;	
+	font-weight: bold; /*Negrito*/
+	font-size: 1.5em;
+}
+span{
+	color: LightGoldenRodYellow;
+	background-color: Indigo;
+	position: relative;
+}
+
+#pCima{top: -20px;}
+#pBaixo{bottom: -20px;}
+
+div{
+	width: 200px; height: 200px;
+	background-color: GreenYellow;
+	border: 2px dashed Gold;
+	padding-top: 36px; 	
+	text-align: center;
+	box-sizing: border-box;
+	margin: 10px;
+	position: absolute;
+}
+
+#pSetaCima{top: 0px; right: 200px;}
+#pSetaBaixo{top: 400px; right: 200px;}
+#pSetaDireita{ top: 200px; right: 0px;}
+#pSetaEsquerda{top: 200px; right: 400px;}
+
+.circulo{
+	width: 100px; /*Largura*/
+	height: 100px; /*Altura*/
+	border: 2px solid Chartreuse;
+	border-radius: 50%; /*Circular*/
+
+}
+.verde{background-color: green; top:0; left:0;}
+.amarelo{background-color: yellow; bottom:0; left:0;}
+.azul{background-color: blue; top:0; right:0;}
+.branco{background-color: white; bottom:0; right:0;
+
+}
+
+#quadradoAmarelao{
+	border:5px solid green; 
+	width:700px;
+	height:300px;
+	background-color: yellow;
+	box-sizing: border-box;
+	}
+
+	.quadrado1{
+		border: 5px solid black;
+		height:100px;
+		width: 100px;
+		background-color: yellow;
+		float: left;
+		margin: 30px;
+		top: 20px;
+	}
+
+	#raposa{
+		background-image: url("../imagens/raposa.png");
+		background-size: 100%;
+		width: 200px;
+		height: 200px;
+		position: fixed; /*Fixo*/
+		right: 0; bottom: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
