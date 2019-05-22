@@ -1,0 +1,123 @@
+body{
+	background-color: DeepSkyBlue;
+}
+
+@media screen and (orientation: landscape){
+	/*Paisagem - horizontal*/
+	.paisagem{
+		display: block;
+		font-size: 3em;}
+	.retrato{display: none;}/*Desaparece*/
+}
+
+@media screen and (orientation: portrait){
+	/*Retrato - Vertical*/
+
+	.paisagem{display: none;}/*Desaparece*/
+	.retrato{display: block;
+			font-size: 3em;}
+}
+
+.impressora{display: none;}
+	@media screen and (orientation: landscape){
+	/*Paisagem - horizontal*/
+	.paisagem{
+		display: block;
+		font-size: 3em;}
+	.retrato{display: none;}/*Desaparece*/
+	.impressora{display: block;}
+}
+
+@media screen and (orientation: portrait){
+	/*Retrato - Vertical*/
+
+	.paisagem{display: none;}/*Desaparece*/
+	.retrato{display: block;
+			font-size: 3em;}
+	.impressora{display: block;}
+}
+
+
+/*CSS para o Álbum de Fotos*/
+
+main{
+	display: block;
+	border: 3px ridge DeepSkyBlue;
+	box-shadow: 0 0 5px black;
+	width: 95%;
+	margin: 0 auto;/*Centralizando*/
+}
+
+br{clear: both;}
+figure{
+	width: 30%;
+	float: left;
+	background-color: white;
+	padding: 20px;
+	box-sizing: border-box;
+	margin: 20px;
+}
+
+img{
+	width: 95%;
+	opacity: 0.6;
+	margin: 0 auto;
+	transition: 1s;
+}
+
+img:hover{opacity: 1;}
+figcaption{
+	background-color: rgba(0,0,0,0.5);
+	color: white;
+	width: 95%;
+	position: relative;
+	bottom: 32px;
+	text-align: center;
+	padding: 5px;
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 1024px){
+	main{
+		width: 1024px;
+		box-sizing: border-box;
+	}
+	figure{
+		width: 210px;
+		height: 280px;
+	}
+	img{
+		height: 95%;
+	}
+}
+
+
+@media screen and (max-width:640px){
+	main{
+		width: 640px;
+		box-sizing: border-box;
+	}
+	figure{
+		width: 600px;
+		height: 300px;
+	}
+	img{
+		height: 95%;
+	}
+}
+
+@media screen
+ and (min-width:641px)
+and (max-width: 1023){
+	main{
+		width: 800px;
+		box-sizing: border-box;
+	}
+	figure{
+		width: 380px;
+		height: 300px;
+	}
+	img{
+		height: 95%;
+	}
+}

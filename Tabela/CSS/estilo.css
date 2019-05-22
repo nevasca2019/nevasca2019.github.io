@@ -1,0 +1,38 @@
+body{
+	background-color: deepPink;
+	color: deepSkyBlue;
+}
+
+.sublinhado{
+	text-decoration: underline;
+	text-decoration-color: black;
+}
+
+table{
+	border: 3px ridge orange;
+	border-collapse: collapse;/*Linha única*/
+	width: 60%;
+	text-align: center;
+}
+tr{
+	border: 2px dotted white;
+}
+
+th,td{
+	border: 1px solid gray;
+}
+
+tr:nth-child(even){/*Linhas ímpares*/
+	background-color: cornsilk;
+}
+
+tr:hover{
+	background-color: coral;
+	animation: 1s;
+}
+tbody:nth-child(odd){
+	background-color: #33FFBE;
+}
+
+.icone{ width: 64px; height: 64px;}
+

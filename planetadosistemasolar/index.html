@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"><!-- Para funfar os acentos -->
+	<title>Planetas do Sistema Solar</title>
+
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One|Luckiest+Guy" rel="stylesheet">
+
+	<style type="text/css">
+		body{
+			background-color: orange;
+			color: whitesmoke;
+		}
+    
+		#sol{
+			width: 100%;/*Largura Responsiva*/
+			height: 100%;
+			position: fixed;
+			top: 0; left: 0;
+			z-index: -1;
+			opacity: 0.4;			
+		}
+
+		h1{
+			font-family: 'Luckiest Guy', cursive;
+			font-size: 3em;
+		}
+		h2{
+			font-family: 'Fredoka One', cursive;
+			font-size: 2em;
+		}
+
+		.redonda{
+			width: 300px;
+			height: 300px;
+			border-radius: 50%; /*arredonda a borda*/
+			border: 5px solid white;
+
+			/*Para centralizar imagem*/
+			display: block;
+			margin: 20px auto; 
+		}
+		
+		.seta{
+			font-size: 400%;
+			text-align: center;
+		}
+
+		.seta a{
+			text-decoration: none;
+		}
+
+		#lista{
+			border-color:rgb(230,230,230);
+			color: black;
+			border:5px solid:black;
+		}
+
+		#soltable{
+			background: orange;
+		}
+
+		#soltable{
+			background-color: yellow;
+		}
+
+		#jupitertable{
+			background-color: brown;
+		}
+
+		#saturnotable{
+			background-color: #CD853F;
+		}
+
+		#uranotable{
+			background-color: #42adf4
+		}
+
+		#netunotable{
+
+			background-color: #326aba;
+		}
+
+		#terratable{
+
+			background-color: #1E90FF;
+		}
+
+		#venustable{
+
+			background-color: #e6ea9f;
+		}
+
+		#martetable{
+
+			background-color: #B22222;
+		}
+
+		#mercuriotable{
+			background-color:  #ad6829;
+		}
+		/*ol indentificada com #menu*/
+		ol#menu{
+			list-style-type: none;
+			width: 1000px;
+			position: fixed;
+			margin-left: 50%;/*Empurrando*/
+			left: -500px;/*puxando*/
+			top:-20px;/*puxando para cima*/
+
+
+		}
+		/*li filho de #menu*/
+		#menu li{
+
+			float:left;
+			background-color: #20B2AA;
+			border-right: 2px solid gray;
+		}
+		#menu li a{ /*Link*/
+
+			text-decoration:none;
+			padding:20px 20px;
+			display: block;
+			color: white;
+			
+		}
+		#menu li a:hover{ /*pseudoclass*/
+          /*Passar o mouse por cima*/
+             background-color: lightgray;
+             color:blue;
+
+             
+		 }
+
+		 .vocêêstáaqui{
+
+		 	background-color: lightgray;
+             color: blue;
+
+		 }
+
+		h1{ clear:both;}
+
+		#sistemasolar{
+			margin-top: 100px;
+		}
+
+		
+		
+
+	</style>
+
+</head>
+<body>
+	<ol id="menu">
+         
+         
+         <li><a class="vocêêstáaqui" href="index.html">Início</a></li>
+         <li><a href="sol.html">Sol</a></li>
+		<li><a href="mercurio.html">Mercúrio</a></li> <!-- indentação -->
+		<li><a href="venus.html">Vênus</a></li>
+		<li><a href="terra.html">Terra</a></li>
+		<li><a href="marte.html">Marte</a></li>
+		<li><a href="jupiter.html">Júpiter</a></li>
+		<li><a href="saturno.html">Saturno</a></li>
+		<li><a href="urano.html">Urano</a></li>
+		<li><a href="netuno.html">Netuno</a></li> 
+
+	</ol>
+    
+
+	<img id="sol" src="imagens/sol.jpg" alt="Imagem do Sol" />
+
+	<h1 id="sistemasolar">Sistema Solar</h1>
+	<ol><!-- Lista Ordenada -->
+		
+	</ol>
+	<table id="lista" border=1 cellspacing=0 cellpadding=2 bordercolor="666633">
+  <tr>
+    <th>Corpo</th>
+    <th>Imagem</th>
+    <th>Raio Médio (km)</th>
+    <th>Volume(x 10)</th>
+    <th>Massa (x10 kg)</th>
+  </tr>
+
+  <tr id="soltable">
+	<td>Sol</td>
+	<td><img src="imagens/sol.png" alt="sol"></td>
+	<td>696.000</td>
+	<td>1.412,000,000</td>
+	<td>1.989,100.000</td>
+	</tr>
+
+   <tr id="jupitertable">
+	<td>Júpiter</td>
+	<td><img  src="imagens/jupiter.png" alt="jupiter"></td>
+	<td>69.911</td>
+	<td>1.431,280</td>
+	<td>1.98,600</td>
+	</tr>
+
+    <tr id="saturnotable">
+	<td>Saturno</td>
+	<td><img  src="imagens/saturno.png" alt="saturno"></td>
+	<td>58,232</td>
+	<td>827,130</td>
+	<td>568,460</td>
+    </tr>
+
+	<tr id="uranotable">
+	<td>Urano</td>
+	<td><img  src="imagens/urano.png" alt="urano"></td>
+	<td>25,362</td>
+	<td>68,340</td>
+	<td>86,832</td>
+    </tr>
+
+    <tr id="netunotable">
+	<td>Netuno</td>
+	<td><img  src="imagens/netuno.png" alt="netuno"></td>
+	<td>24,622</td>
+	<td>62,540</td> 
+	<td>102,430</td>
+    </tr>
+
+    <tr id="terratable">
+	<td>Terra</td>
+	<td><img  src="imagens/terra.png" alt="terra"></td>
+	<td>6,371.0</td>
+	<td>1,83.21</td>
+	<td>5,973.6</td>
+    </tr>
+
+    <tr id="venustable">
+	<td>Vênus</td>
+	<td><img src="imagens/venus.png" alt="venus"></td>
+	<td>6,051.8</td>
+	<td>928,43</td>
+	<td>4,668,5</td>
+	</tr>
+    
+    <tr id="martetable"> 
+	<td>Marte</td>
+	<td><img  src="imagens/marte.png" alt="marte"></td>
+	<td>3,390</td>
+	<td>163,18</td>
+	<td>641,85</td>
+	</tr>
+
+
+	<tr id="mercuriotable">
+		<td>Mercúrio</td>
+		<td><img src="imagens/mercurio.png" alt="mercurio" width="50"></td>
+        <td>4,879 km</td>
+         <td>7,5 × 107 km²</td>
+         <td>3,302×1023 kg</td>
+	</tr>
+</table>
+ 
+
+	<h2 id="mercurio">Mercúrio</h2> <!-- indentação -->
+	<img src="imagens/mercurio.jpg" alt="" class="redonda">
+	
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="venus">Vênus</h2>
+	<img class="redonda" src="imagens/venus.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="terra">Terra</h2>
+	<img class="redonda" src="imagens/terra.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="marte">Marte</h2>
+	<img class="redonda" src="imagens/marte.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="jupiter">Júpiter</h2>
+	<img class="redonda" src="imagens/jupiter.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="saturno">Saturno</h2>
+	<img class="redonda" src="imagens/saturno.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+	
+	<h2 id="urano">Urano</h2>
+	<img class="redonda" src="imagens/urano.jpg" alt="">
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+	<h2 id="netuno">Netuno</h2>
+	<img class="redonda" src="imagens/netuno.jpg" alt=""> 
+	<p class="seta"><a href="#sistemasolar"> ⏫ </a></p>
+
+</body>
+</html>
