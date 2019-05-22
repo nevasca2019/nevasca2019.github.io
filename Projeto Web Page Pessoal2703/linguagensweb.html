@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Linguagens Web</title>
+	<!--Fonte Google-->
+	<link href="https://fonts.googleapis.com/css?family=Lilita+One|Sniglet" rel="stylesheet">
+	
+	<style type="text/css">
+		body{background-color: #F2FFFC;}
+		h1{
+			font-size: xx-large;
+			font-family: 'Lilita One', cursive;
+			text-align: center;			
+		}
+		main h1{
+		/*h1 dentro do main*/
+			background-color: #851944;
+			color: white;
+		}
+		h2{
+			font-size: large;
+			font-family: 'Sniglet', cursive;
+		}
+		p{
+			font-family: 'Courgette', cursive;
+			text-align: justify;
+			text-indent: 25px;
+		}
+
+		aside{
+			 background-color: #3C1D3D; 
+			 color: #F2FFFC;
+		}
+		footer{
+			background-color: black;
+			color: #F2FFFC;
+		}
+		nav a{
+			color: #F2FFFC;
+		}
+
+		aside{
+			 background-color: #3C1D3D; 
+			 color: #F2FFFC;
+		}
+		footer{
+			background-color: black;
+			color: #F2FFFC;
+			clear: both;
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%; 
+
+
+		}
+		nav a{
+			color: #F2FFFC;
+		}
+
+		blockquote, aside, footer{
+			padding: 20px;
+		}
+
+		main div {
+    		width: 720px;
+    		margin: auto; /*Centralização da caixa*/
+		}
+		aside{
+			text-align: center;
+		}
+		ul{list-style-type:none;} /*Retirar os círculos*/
+
+		.icones-redes-sociais li {
+			display: inline-block;
+		}
+
+		.icones-redes-sociais a {
+		    width: 32px;
+		    height: 32px;
+		    display: inline-block;
+		    color:transparent;/*tira o texto*/
+		}
+
+		.facebook {
+		    background-image: url(imagens/facebook.png);
+		}
+
+		.twitter {
+		    background-image: url(imagens/twitter.png);
+		}
+
+		.instagram {
+		    background-image: url(imagens/instagram.png);
+		}
+       .direita{float: right;/*Direita*/ }
+       .esquerda{float: left;/*Esquerda*/}
+
+
+			main {
+			    float: left;
+			    width: 85%;
+			    box-sizing: border-box;
+			}
+
+			.minha-foto, .navegacao-site {
+			    float: right;
+			    width: 15%;
+			    box-sizing: border-box;
+					    border-left: 10px solid black;
+		    border-bottom: 10px solid black;
+		}
+
+			article{
+				padding-bottom: 60px;
+			}
+
+
+	</style>
+</head>
+<body>
+	<main>
+	<h1>Linguagens Web</h1>
+	<p>Descreva em um ou mais parágrafos um resumo sobre HTML, CSS e Javascript. </p>
+	<img src="imagens/trio.png" alt="Logotipo das principais Linguagens: HTML, CSS e Javascript">
+
+	<article>
+	<h2>
+		<a href="https://www.w3schools.com/html/" 
+		target="_blank"> HTML </a>
+	</h2>
+	<p>Descreva em um ou mais parágrafos o que significa, quem foi o criador e qual a sua finalidade. </p>
+
+	<img src="imagens/html5.png" alt="Logotipo da Linguagem HTML">
+	</article>
+
+	<article>
+	<h2>
+		<a target="_blank" 
+		href="https://www.w3schools.com/css/ ">
+		CSS
+		</a>
+	</h2> 
+	<p>Descreva em um ou mais parágrafos o que significa, quem foi o criador e qual a sua finalidade. </p>
+	
+	<img src="imagens/css3.png" alt="Logotipo da CSS">
+	</article>
+
+	<article>
+	<h2>
+		<a target="_blank"
+		href="https://www.w3schools.com/js/ ">
+			Javascript
+		</a>
+	</h2>
+
+	<p>Descreva em um ou mais parágrafos o que significa, quem foi o criador e qual a sua finalidade. </p>
+	<img src="imagens/javascript.png" alt="Logotipo do Javascript">
+	</article>
+
+	</main>
+	
+	<img class="minha-foto" src="imagens/foto.PNG" alt="Foto do Japinha">
+
+	<aside class="navegacao-site"><!-- Não é o principal assunto -->
+   		<h1>Tarcnux</h1>
+   		<nav><!-- Navegação -->
+      		<ul>
+         		<li><a href="#">Home</a></li>
+         		<li><a href="biografia.html">
+         			Sobre mim</a></li>
+         		<li><a href="linguagensweb.html">
+         			Linguagens Web</a></li>
+         		<li><a href="#">Contato</a></li>
+      		</ul>
+   		</nav>
+   		
+   		<ul class="icones-redes-sociais">
+			        <li>
+			            <a class="facebook" href="https://facebook.com/tarcnux">
+			                facebook
+			            </a>
+			        </li>
+			        <li>
+			            <a class="twitter" href="https://twitter.com/tarcnux">
+			                twitter
+			            </a>
+			        </li>
+			        <li>
+			            <a class="instagram" href="https://instagram.com/tarcnux">
+			                instagram
+			            </a>
+			        </li>
+			    </ul>
+   		
+	</aside>
+
+	<footer><!-- Rodapé -->
+  		&copy; &reg; Tarcnux 2019
+	</footer>
+
+</body>
+</html>
